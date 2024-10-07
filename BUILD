@@ -4,8 +4,8 @@ py_library(
     name = "AdEMAMix",
     srcs = ["AdEMAMix.py"],
     deps = [
-        "@pypi//numpy:pkg",
-        "@pypi//torch:pkg",
+        "@pip//numpy:pkg",
+        "@pip//torch:pkg",
     ],
 )
 
@@ -14,6 +14,6 @@ py_test(
     srcs = ["AdEMAMix_test.py"],
     deps = [
         ":AdEMAMix",
-        "@pypi//absl_py:pkg",
+        "@pip//absl_py:pkg",
     ],
 )
